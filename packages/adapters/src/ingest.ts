@@ -60,7 +60,7 @@ function contentHash(row: Record<string, unknown>): string {
  * statement timeout" while the cron itself reported success.
  *
  * The scraped-source importer was paced that morning. This path was missed,
- * which is the one that actually runs in production every ten minutes.
+ * which was the one that actually ran in production every ten minutes.
  *
  * Same rule as there: idle for as long as the last write took. Half the CPU
  * goes to people looking for a job, the crawl takes twice as long, and nobody

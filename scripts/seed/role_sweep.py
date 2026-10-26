@@ -25,7 +25,7 @@ import sys
 import httpx
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
-UA = {"User-Agent": "JobswormBot/1.0 (+https://www.jobsworm.fun/about)"}
+UA = {"User-Agent": "JobswormBot/1.0 (+https://github.com/baldiga/jobsworm)"}
 
 # ---------------------------------------------------------------- role families
 # Add a family here rather than editing the regex at the call site, so the next
