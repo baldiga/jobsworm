@@ -1,0 +1,53 @@
+# gitleaks configuration.
+#
+# The default rules are kept in full. One narrow exception is declared below,
+# and it is worth explaining rather than just silencing.
+#
+# WHY THE EXCEPTION EXISTS
+#
+# Comeet is one of the six applicant-tracking systems this project reads. A
+# company's careers page fetches its own vacancies from:
+#
+#     https://www.comeet.co/careers-api/2.0/company/<uid>/positions?token=<token>
+#
+# Both <uid> and <token> are shipped, in the clear, in the JavaScript that the
+# employer's own public careers page sends to every visitor. The endpoint takes
+# no authentication, is read-only, and returns exactly the vacancies already
+# published on that page. The pair is a board identifier, not a credential:
+# there is nothing to escalate to, nothing to write, and nothing that is not
+# already public. `scripts/seed/comeet_discover.py` documents how they are read.
+#
+# gitleaks cannot know that. Its `generic-api-key` rule sees a high-entropy hex
+# string next to the word "token" and flags it, which is the correct default
+# behaviour and the wrong answer here — 33 times, for 172 employers.
+#
+# WHAT THE EXCEPTION DOES NOT DO
+#
+# It does not allowlist the two files wholesale. The `regexes` entry matches the
+# Comeet pair's exact shape — two characters, a dot, three digits, "::", then
+# uppercase hex — so an AWS key, a JWT, a Supabase service-role key or anything
+# else that landed in those files would still be caught. Every other rule and
+# every other path is scanned normally.
+#
+# If you fork this and point it at your own Comeet boards, your tokens are
+# equally public and this exception continues to apply. If you find yourself
+# widening it, stop and check what you are actually hiding.
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Comeet public board identifiers (uid::token), not credentials. See the comment above."
+regexes = [
+  # The paired form, as stored in data/companies.seed.json.
+  '''[0-9A-Za-z]{2}\.[0-9A-Za-z]{3}::[0-9A-F]{24,64}''',
+  # The bare token, as assigned in scripts/seed/comeet_discover.py.
+  '''\b[0-9A-F]{24,64}\b''',
+]
+paths = [
+  '''data/companies\.seed\.json''',
+  '''scripts/seed/comeet_discover\.py''',
+]
+# Both must match: the string has to look like a Comeet identifier AND live in
+# one of the two files that legitimately hold them.
+condition = "AND"
