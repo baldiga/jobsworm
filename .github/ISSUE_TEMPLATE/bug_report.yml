@@ -1,0 +1,36 @@
+name: Bug report
+description: Something on the site or in the code does not work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. **Do not paste keys, tokens, `.env` contents, or anyone's personal details** (names, emails, phone numbers, CVs). Security problems go through the Security tab, not here.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you saw, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to reproduce
+      description: Steps, or the command you ran.
+      placeholder: |
+        1. Run `pnpm ingest:once --company=example.com`
+        2. ...
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: Local dev, your own deployment, a fork, CI?
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or output
+      description: Paste relevant output. Remove anything secret first.
+      render: shell

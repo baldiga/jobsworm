@@ -1,0 +1,16 @@
+-- supabase/seed.sql
+--
+-- Intentionally empty.
+--
+-- Jobsworm seeds through the TypeScript pipeline, not through SQL:
+--
+--     pnpm seed
+--
+-- (scripts/seed/index.ts, which upserts the verified employers and ATS boards
+-- in data/companies.seed.json; `pnpm ingest:once` then fetches their jobs).
+-- Keeping seed data out of SQL means dedupe, the tech-only gate and the
+-- decomposition rules all run through the same code path as production
+-- ingestion, so a local database is never shaped differently from a real one.
+--
+-- `supabase db reset` runs the migrations and then this file; leaving it empty
+-- gives a clean, empty database that `pnpm seed` fills.

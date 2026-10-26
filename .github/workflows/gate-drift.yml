@@ -1,0 +1,86 @@
+name: Gate drift (report only)
+
+# Every Monday, re-run the whole quality gate over rows that are already in
+# the index and print what it would now hide.
+#
+# The gates run at import time, so a row imported last month was judged by last
+# month's rules. When a rule is tightened — a new non-vacancy cue, a location
+# fix — the rows that slipped through before stay on the site forever unless
+# something goes back and looks. This is that something.
+#
+# It is the check that would have caught, a week earlier, the 332 foreign jobs
+# sitting in the index while an audit reported the index clean.
+#
+# REPORT ONLY. No --apply. The step prints its findings into the run summary
+# and exits non-zero when it finds anything, so the weekly red tick IS the
+# report. Hiding rows automatically is a Phase 4 decision that needs two clean
+# reviewed weeks behind it first.
+#
+# Required repository secrets:
+#   NEXT_PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
+
+# The live service was retired in October 2026, so this ships with its
+# `schedule:` trigger removed and `workflow_dispatch` only. Nothing fires in a
+# clone. The cadence it ran on is recorded below; put the `schedule:` block back
+# once your own secrets are in place.
+#
+# It ran on: cron "0 4 * * 1"
+# 04:00 UTC Monday: after the database's nightly hygiene window closes and
+# well before the 05:17 scrape, so it reads a settled index.
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: gate-drift
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    # Scheduled runs belong to the original deployment. A fork that enables
+    # Actions would otherwise start scraping on a timer with nothing
+    # configured; manual runs (workflow_dispatch) still work anywhere.
+    if: github.event_name != 'schedule' || github.repository_owner == 'baldiga'
+    timeout-minutes: 15
+    env:
+      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      # `audit:index` imports @jobswarm/core from the repo root, which only
+      # resolves because the root package.json declares the workspace
+      # dependencies. A clean runner checkout is exactly the case that used to
+      # fail.
+      #
+      # `tee` into the step summary so the finding is readable from the run
+      # page without expanding a log, and `pipefail` so the tee does not
+      # swallow the script's exit code.
+      - name: Re-run every gate over the stored index
+        shell: bash
+        run: |
+          set -o pipefail
+          pnpm -s audit:index | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Tell Telegram the gates drifted
+        if: failure() && env.TELEGRAM_BOT_TOKEN != ''
+        env:
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          curl -fsS -X POST \
+            "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -d "chat_id=${TELEGRAM_CHAT_ID}" \
+            -d "disable_web_page_preview=true" \
+            --data-urlencode "text=Jobsworm: the weekly gate audit found rows to review. ${RUN_URL}"

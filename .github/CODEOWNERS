@@ -1,0 +1,6 @@
+# The maintainer reviews everything. Schema and security-sensitive paths are listed
+# separately so they stay covered if this file grows more owners.
+*                     @baldiga
+/supabase/migrations/ @baldiga
+/apps/web/app/api/    @baldiga
+/.github/workflows/   @baldiga

@@ -1,0 +1,22 @@
+[project]
+name = "jobswarm-worker"
+version = "0.1.0"
+description = "Jobsworm scraping worker: Yad2, AllJobs and public Facebook groups"
+requires-python = ">=3.11"
+dependencies = [
+  "httpx>=0.27",
+  "selectolax>=0.3.21",
+  "python-dotenv>=1.0",
+  "supabase>=2.10",
+]
+
+[project.optional-dependencies]
+# Rung 1 and 2 of the ladder. Heavy (bundles browser engines), so they are
+# optional: the ladder degrades to plain HTTP when they are absent.
+browser = [
+  "crawl4ai>=0.4",
+  "scrapling[fetchers]>=0.4",
+]
+
+[tool.setuptools.packages.find]
+include = ["jobswarm_scrape*"]

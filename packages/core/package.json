@@ -1,0 +1,23 @@
+{
+  "name": "@jobsworm/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./normalize": "./src/normalize.ts",
+    "./decompose": "./src/decompose.ts",
+    "./data/locations": "./src/data/locations.ts",
+    "./data/skills": "./src/data/skills.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}

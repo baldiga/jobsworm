@@ -1,0 +1,24 @@
+name: Suggest a source
+description: An employer, ATS or job feed the index should read.
+labels: [source]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Sources are added only when their terms of use allow republishing listings. A permissive `robots.txt` is not enough. See docs/data-sources-and-legal.md.
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Company careers page, ATS board URL, or feed URL.
+    validations:
+      required: true
+  - type: input
+    id: terms
+    attributes:
+      label: Terms of use
+      description: Link to the source's terms, if it is not an employer's own ATS board.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else

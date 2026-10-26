@@ -1,0 +1,329 @@
+{
+ "generated_at": "2026-09-20",
+ "jobs_scanned": 4540,
+ "known_terms_found": 283,
+ "min_jobs": 8,
+ "note": "Candidates only. Mined from open job ads by position, not frequency. A human accepts or rejects each: a wrong term degrades matching for everyone.",
+ "candidates": [
+  {
+   "term": "cloud platforms",
+   "jobs": 49,
+   "seenOn": "Mid-Level Backend Engineer"
+  },
+  {
+   "term": "ci/cd pipelines",
+   "jobs": 39,
+   "seenOn": "AI AppSec Engineer"
+  },
+  {
+   "term": "databases",
+   "jobs": 37,
+   "seenOn": "Linux Security Researcher"
+  },
+  {
+   "term": "ai tools",
+   "jobs": 36,
+   "seenOn": "Customer Delivery Manager"
+  },
+  {
+   "term": "ai",
+   "jobs": 35,
+   "seenOn": "Product Manager- R&D and Innovation Center"
+  },
+  {
+   "term": "data engineering",
+   "jobs": 32,
+   "seenOn": "Data Engineer"
+  },
+  {
+   "term": "cloud environments",
+   "jobs": 31,
+   "seenOn": "Senior Frontend Engineer"
+  },
+  {
+   "term": "software development",
+   "jobs": 29,
+   "seenOn": "AI AppSec Engineer"
+  },
+  {
+   "term": "cloud infrastructure",
+   "jobs": 29,
+   "seenOn": "Incident Response Expert"
+  },
+  {
+   "term": "software engineering",
+   "jobs": 26,
+   "seenOn": "Product Manager"
+  },
+  {
+   "term": "apis",
+   "jobs": 26,
+   "seenOn": "Technical Support & Integrations Engineer"
+  },
+  {
+   "term": "microservices architecture",
+   "jobs": 21,
+   "seenOn": "Generative AI Engineer"
+  },
+  {
+   "term": "backend development",
+   "jobs": 21,
+   "seenOn": "Senior Backend Developer"
+  },
+  {
+   "term": "virtualization",
+   "jobs": 21,
+   "seenOn": "Systems Engineer - Strategic Accounts"
+  },
+  {
+   "term": "containerization",
+   "jobs": 20,
+   "seenOn": "Full-Stack Developer"
+  },
+  {
+   "term": "devops",
+   "jobs": 19,
+   "seenOn": "Platform DevOps Engineer"
+  },
+  {
+   "term": "security",
+   "jobs": 18,
+   "seenOn": "Senior DevSecOps Engineer"
+  },
+  {
+   "term": "relational",
+   "jobs": 18,
+   "seenOn": "Machine Learning Engineer"
+  },
+  {
+   "term": "scripting",
+   "jobs": 17,
+   "seenOn": "Senior DevSecOps Engineer"
+  },
+  {
+   "term": "audio",
+   "jobs": 17,
+   "seenOn": "Senior Embedded Engineer"
+  },
+  {
+   "term": "data labeling",
+   "jobs": 16,
+   "seenOn": "Project Perseus | Speech & Voice AI Analyst- Japanese Speake"
+  },
+  {
+   "term": "data",
+   "jobs": 15,
+   "seenOn": "Senior Transformation Consultant"
+  },
+  {
+   "term": "networking concepts",
+   "jobs": 15,
+   "seenOn": "Senior C/C++ Core Developer"
+  },
+  {
+   "term": "security research",
+   "jobs": 14,
+   "seenOn": "Linux Security Researcher"
+  },
+  {
+   "term": "cloud services",
+   "jobs": 14,
+   "seenOn": "Backend Team Lead"
+  },
+  {
+   "term": "cloud-native technologies",
+   "jobs": 13,
+   "seenOn": "Backend Software Engineer"
+  },
+  {
+   "term": "data analysis",
+   "jobs": 13,
+   "seenOn": "Senior Product Manager"
+  },
+  {
+   "term": "windows",
+   "jobs": 13,
+   "seenOn": "Software Team Leader"
+  },
+  {
+   "term": "containers",
+   "jobs": 13,
+   "seenOn": "Staff Backend Engineer"
+  },
+  {
+   "term": "product management",
+   "jobs": 12,
+   "seenOn": "Digital Consumer Strategy, Product & AI Manager"
+  },
+  {
+   "term": "relational databases",
+   "jobs": 12,
+   "seenOn": "Senior Backend Engineer"
+  },
+  {
+   "term": "rest apis",
+   "jobs": 11,
+   "seenOn": "Delivery Solution Engineer"
+  },
+  {
+   "term": "langgraph",
+   "jobs": 11,
+   "seenOn": "Senior AI Engineer"
+  },
+  {
+   "term": "fintech",
+   "jobs": 10,
+   "seenOn": "Senior Data Analyst"
+  },
+  {
+   "term": "ai-assisted development tools",
+   "jobs": 10,
+   "seenOn": "Squad Lead"
+  },
+  {
+   "term": "event-driven architectures",
+   "jobs": 10,
+   "seenOn": "Popai Health- Full Stack Developer"
+  },
+  {
+   "term": "ai agents",
+   "jobs": 10,
+   "seenOn": "Member Of Technical Staff, CTO Office"
+  },
+  {
+   "term": "enterprise clients",
+   "jobs": 10,
+   "seenOn": "Strategic CSM"
+  },
+  {
+   "term": "engineering",
+   "jobs": 10,
+   "seenOn": "CTO Office Team Member"
+  },
+  {
+   "term": "saas",
+   "jobs": 10,
+   "seenOn": "Technical Project Manager"
+  },
+  {
+   "term": "identity",
+   "jobs": 10,
+   "seenOn": "IT Manager"
+  },
+  {
+   "term": "cloud security best practices",
+   "jobs": 10,
+   "seenOn": "DevOps Engineer (U.S Citizen)"
+  },
+  {
+   "term": "architecture",
+   "jobs": 10,
+   "seenOn": "Senior Software Engineer, AI Builder (Python)"
+  },
+  {
+   "term": "infrastructure-as-code",
+   "jobs": 10,
+   "seenOn": "Cloud Security Lead"
+  },
+  {
+   "term": "technical project delivery",
+   "jobs": 10,
+   "seenOn": "Sr. Forward Deployed Engineer"
+  },
+  {
+   "term": "production",
+   "jobs": 9,
+   "seenOn": "Senior Software Developer — Malware Research Platform"
+  },
+  {
+   "term": "networking fundamentals",
+   "jobs": 9,
+   "seenOn": "Malware Researcher"
+  },
+  {
+   "term": "large language models",
+   "jobs": 9,
+   "seenOn": "Generative AI Engineer"
+  },
+  {
+   "term": "cloud",
+   "jobs": 9,
+   "seenOn": "Head of Delivery"
+  },
+  {
+   "term": "backend",
+   "jobs": 9,
+   "seenOn": "Senior Software Engineer"
+  },
+  {
+   "term": "distributed computing",
+   "jobs": 9,
+   "seenOn": "Sr. Forward Deployed Engineer"
+  },
+  {
+   "term": "spark runtime internals",
+   "jobs": 9,
+   "seenOn": "Sr. Forward Deployed Engineer"
+  },
+  {
+   "term": "evolving guidelines",
+   "jobs": 9,
+   "seenOn": "Project Perseus | Data Labeling Associate - Portuguese (Braz"
+  },
+  {
+   "term": "vector databases",
+   "jobs": 8,
+   "seenOn": "AI Ops Engineer"
+  },
+  {
+   "term": "healthcare",
+   "jobs": 8,
+   "seenOn": "Popai- Product Manager"
+  },
+  {
+   "term": "javascript/typescript",
+   "jobs": 8,
+   "seenOn": "Forward Deployed Engineer"
+  },
+  {
+   "term": "web",
+   "jobs": 8,
+   "seenOn": "Senior Security Researcher"
+  },
+  {
+   "term": "b2b saas",
+   "jobs": 8,
+   "seenOn": "Product Manager - Engage"
+  },
+  {
+   "term": "network protocols",
+   "jobs": 8,
+   "seenOn": "Experienced Backend JavaScript Developer - Worldwide"
+  },
+  {
+   "term": "linux environments",
+   "jobs": 8,
+   "seenOn": "Cloud Software Engineer (AI-Powered / End-to-End)"
+  },
+  {
+   "term": "aws services",
+   "jobs": 8,
+   "seenOn": "Senior Backend Engineer"
+  },
+  {
+   "term": "distributed computing systems",
+   "jobs": 8,
+   "seenOn": "MLOps Engineer"
+  },
+  {
+   "term": "ci/cd for production deployments",
+   "jobs": 8,
+   "seenOn": "Sr. Forward Deployed Engineer"
+  },
+  {
+   "term": "technical areas",
+   "jobs": 8,
+   "seenOn": "Sr. Forward Deployed Engineer"
+  }
+ ]
+}

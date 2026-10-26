@@ -1,0 +1,36 @@
+name: Misclassified job
+description: A job shows the wrong function, seniority, location, skills, or should not be listed at all.
+labels: [classification]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: The posting
+      description: >-
+        A link to the original posting, or paste its title and description.
+        There is no live Jobsworm site to link to any more.
+    validations:
+      required: true
+  - type: dropdown
+    id: field
+    attributes:
+      label: What is wrong
+      multiple: true
+      options:
+        - Function / role type
+        - Seniority
+        - Location or remote policy
+        - Skills
+        - Marked as agency (or not)
+        - Not a tech job / should not be listed
+        - Not a job at all (a CV, an ad, a question)
+        - Duplicate
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What it should be
+    validations:
+      required: true

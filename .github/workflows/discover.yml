@@ -1,0 +1,86 @@
+name: Discover companies (weekly)
+
+# Finding new employers to crawl, which is a different job from crawling them.
+#
+# The index grows two ways: existing companies post more, or we learn about
+# more companies. scrape.yml and the Vercel cron do the first. This does the
+# second, and it is slow and low-yield by nature, so it runs weekly and never
+# blocks anything.
+#
+# Measured on 2026-09-11, both sweeps:
+#   86 candidates -> 10 boards -> 25 Israeli jobs
+#   85 candidates ->  1 board  ->  0 Israeli jobs   (second pass, same funds)
+#
+# The second number is the honest one for a repeat run: the productive
+# portfolio pages get mined once and then mostly repeat themselves. This is a
+# trickle that catches new portfolio companies, not a source of volume. It is
+# scheduled rather than deleted because a trickle costing nothing is still
+# worth having.
+#
+# Report-only. It writes a candidate list and a detection report as artifacts;
+# a human decides what to seed. Nothing here touches the database.
+
+# The live service was retired in October 2026, so this ships with its
+# `schedule:` trigger removed and `workflow_dispatch` only. Nothing fires in a
+# clone. The cadence it ran on is recorded below; put the `schedule:` block back
+# once your own secrets are in place.
+#
+# It ran on: cron "0 6 * * 1"
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: discover
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    # Scheduled runs belong to the original deployment. A fork that enables
+    # Actions would otherwise start scraping on a timer with nothing
+    # configured; manual runs (workflow_dispatch) still work anywhere.
+    if: github.event_name != 'schedule' || github.repository_owner == 'baldiga'
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install worker
+        working-directory: apps/worker
+        run: pip install -r requirements.txt
+
+      # Portfolio pages only, never the funds' Getro/Consider job boards --
+      # those prohibit it in terms. See the docstring in vc_portfolios.py.
+      - name: Harvest candidate domains from VC portfolio pages
+        run: python scripts/seed/vc_portfolios.py --out vc_candidates.txt
+
+      - name: Detect ATS boards
+        run: |
+          python scripts/seed/detect_ats.py \
+            --companies vc_candidates.txt \
+            --out vc_detected.json \
+            --concurrency 12
+
+      - name: Summarise
+        run: |
+          python - <<'PY'
+          import json
+          d = json.load(open("vc_detected.json", encoding="utf-8"))
+          isr = sum(c.get("jobs_israel") or 0 for c in d)
+          print(f"detected {len(d)} boards, {isr} Israeli jobs")
+          for c in d:
+              print(f"  {c['domain']:30s} {c['provider']:16s} israel={c.get('jobs_israel')}")
+          PY
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: company-discovery
+          path: |
+            vc_candidates.txt
+            vc_detected.json
+          retention-days: 30

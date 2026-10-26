@@ -1,0 +1,1082 @@
+[
+ {
+  "name": "Lumos",
+  "domain": "lumos.com",
+  "careers_url": "https://lumos.com/careers",
+  "provider": "ashby",
+  "token": "lumos",
+  "jobs_total": 10,
+  "jobs_israel": 0
+ },
+ {
+  "name": "ConductorOne",
+  "domain": "conductorone.com",
+  "careers_url": "https://conductorone.com/careers",
+  "provider": "ashby",
+  "token": "c1",
+  "jobs_total": 13,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Lago",
+  "domain": "getlago.com",
+  "careers_url": "https://getlago.com/careers",
+  "provider": "ashby",
+  "token": "lago",
+  "jobs_total": 1,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Recurly",
+  "domain": "recurly.com",
+  "careers_url": "https://recurly.com/careers",
+  "provider": "workable",
+  "token": "recurly",
+  "jobs_total": 11,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Tenable",
+  "domain": "tenable.com",
+  "careers_url": "https://tenable.com/careers",
+  "provider": "greenhouse",
+  "token": "tenableinc",
+  "jobs_total": 39,
+  "jobs_israel": 7
+ },
+ {
+  "name": "Vertice",
+  "domain": "vertice.one",
+  "careers_url": "https://vertice.one/careers",
+  "provider": "ashby",
+  "token": "vertice",
+  "jobs_total": 32,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Sequence",
+  "domain": "sequencehq.com",
+  "careers_url": "https://sequencehq.com/careers",
+  "provider": "ashby",
+  "token": "sequence",
+  "jobs_total": 11,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Redefine Meat",
+  "domain": "redefinemeat.com",
+  "careers_url": "https://redefinemeat.com/careers",
+  "provider": "comeet",
+  "token": "28.004::82430D828B4209028B408240494430D8",
+  "jobs_total": 2,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Vim",
+  "domain": "getvim.com",
+  "careers_url": "https://getvim.com/careers",
+  "provider": "greenhouse",
+  "token": "vim",
+  "jobs_total": 2,
+  "jobs_israel": 0
+ },
+ {
+  "name": "TAU Ventures",
+  "domain": "tauventures.com",
+  "careers_url": "https://tauventures.com/careers",
+  "provider": "greenhouse",
+  "token": "iterativehealth",
+  "jobs_total": 53,
+  "jobs_israel": 0
+ },
+ {
+  "name": "TAU Ventures",
+  "domain": "tauventures.com",
+  "careers_url": "https://tauventures.com/careers",
+  "provider": "greenhouse",
+  "token": "labelbox",
+  "jobs_total": 10,
+  "jobs_israel": 0
+ },
+ {
+  "name": "TAU Ventures",
+  "domain": "tauventures.com",
+  "careers_url": "https://tauventures.com/careers",
+  "provider": "greenhouse",
+  "token": "understoodcare",
+  "jobs_total": 3,
+  "jobs_israel": 0
+ },
+ {
+  "name": "TAU Ventures",
+  "domain": "tauventures.com",
+  "careers_url": "https://tauventures.com/careers",
+  "provider": "ashby",
+  "token": "alpacahealth",
+  "jobs_total": 394,
+  "jobs_israel": 0
+ },
+ {
+  "name": "TAU Ventures",
+  "domain": "tauventures.com",
+  "careers_url": "https://tauventures.com/careers",
+  "provider": "ashby",
+  "token": "siftwell-analytics",
+  "jobs_total": 2,
+  "jobs_israel": 0
+ },
+ {
+  "name": "TAU Ventures",
+  "domain": "tauventures.com",
+  "careers_url": "https://tauventures.com/careers",
+  "provider": "ashby",
+  "token": "assorthealth",
+  "jobs_total": 32,
+  "jobs_israel": 0
+ },
+ {
+  "name": "TAU Ventures",
+  "domain": "tauventures.com",
+  "careers_url": "https://tauventures.com/careers",
+  "provider": "workable",
+  "token": "blueprint-health",
+  "jobs_total": 2,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Velocity Global",
+  "domain": "velocityglobal.com",
+  "careers_url": "https://velocityglobal.com/careers",
+  "provider": "ashby",
+  "token": "pebl",
+  "jobs_total": 37,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Notion",
+  "domain": "notion.so",
+  "careers_url": "https://notion.so/careers",
+  "provider": "ashby",
+  "token": "notion",
+  "jobs_total": 130,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Vanta",
+  "domain": "vanta.com",
+  "careers_url": "https://vanta.com/careers",
+  "provider": "ashby",
+  "token": "vanta",
+  "jobs_total": 107,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Authomize",
+  "domain": "authomize.com",
+  "careers_url": "https://authomize.com/careers",
+  "provider": "ashby",
+  "token": "delinea",
+  "jobs_total": 94,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Otter.ai",
+  "domain": "otter.ai",
+  "careers_url": "https://otter.ai/careers",
+  "provider": "greenhouse",
+  "token": "otterai",
+  "jobs_total": 22,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Front",
+  "domain": "front.com",
+  "careers_url": "https://front.com/careers",
+  "provider": "ashby",
+  "token": "frontcareers",
+  "jobs_total": 21,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Cyberhaven",
+  "domain": "cyberhaven.com",
+  "careers_url": "https://cyberhaven.com/careers",
+  "provider": "ashby",
+  "token": "cyberhaven",
+  "jobs_total": 23,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Chili Piper",
+  "domain": "chilipiper.com",
+  "careers_url": "https://chilipiper.com/careers",
+  "provider": "ashby",
+  "token": "chilipiper",
+  "jobs_total": 3,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Intercom",
+  "domain": "intercom.com",
+  "careers_url": "https://intercom.com/careers",
+  "provider": "greenhouse",
+  "token": "intercom",
+  "jobs_total": 119,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Nightfall",
+  "domain": "nightfall.ai",
+  "careers_url": "https://nightfall.ai/careers",
+  "provider": "ashby",
+  "token": "nightfall-ai",
+  "jobs_total": 28,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Adaptive Security",
+  "domain": "adaptivesecurity.com",
+  "careers_url": "https://adaptivesecurity.com/careers",
+  "provider": "ashby",
+  "token": "adaptivesecurity",
+  "jobs_total": 11,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Cursor",
+  "domain": "cursor.com",
+  "careers_url": "https://cursor.com/careers",
+  "provider": "ashby",
+  "token": "cursor",
+  "jobs_total": 126,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Outreach",
+  "domain": "outreach.io",
+  "careers_url": "https://outreach.io/careers",
+  "provider": "lever",
+  "token": "outreach",
+  "jobs_total": 32,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Educative",
+  "domain": "educative.io",
+  "careers_url": "https://educative.io/careers",
+  "provider": "lever",
+  "token": "educative",
+  "jobs_total": 11,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Demandbase",
+  "domain": "demandbase.com",
+  "careers_url": "https://demandbase.com/careers",
+  "provider": "ashby",
+  "token": "demandbase",
+  "jobs_total": 13,
+  "jobs_israel": 0
+ },
+ {
+  "name": "ExtraHop",
+  "domain": "extrahop.com",
+  "careers_url": "https://extrahop.com/careers",
+  "provider": "greenhouse",
+  "token": "extrahopnetworks",
+  "jobs_total": 16,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Bloomreach",
+  "domain": "bloomreach.com",
+  "careers_url": "https://bloomreach.com/careers",
+  "provider": "greenhouse",
+  "token": "bloomreach",
+  "jobs_total": 75,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Sigma Computing",
+  "domain": "sigmacomputing.com",
+  "careers_url": "https://sigmacomputing.com/careers",
+  "provider": "greenhouse",
+  "token": "sigmacomputing",
+  "jobs_total": 64,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Flashpoint",
+  "domain": "flashpoint.io",
+  "careers_url": "https://flashpoint.io/careers",
+  "provider": "ashby",
+  "token": "flashpoint.io",
+  "jobs_total": 3,
+  "jobs_israel": 0
+ },
+ {
+  "name": "CTM360",
+  "domain": "ctm360.com",
+  "careers_url": "https://ctm360.com/careers",
+  "provider": "smartrecruiters",
+  "token": "ctm360",
+  "jobs_total": 4,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Level AI",
+  "domain": "thelevel.ai",
+  "careers_url": "https://thelevel.ai/careers",
+  "provider": "ashby",
+  "token": "level-ai",
+  "jobs_total": 18,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Hive AI",
+  "domain": "thehive.ai",
+  "careers_url": "https://thehive.ai/careers",
+  "provider": "lever",
+  "token": "hive",
+  "jobs_total": 76,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Bandwidth",
+  "domain": "bandwidth.com",
+  "careers_url": "https://bandwidth.com/careers",
+  "provider": "greenhouse",
+  "token": "bandwidth",
+  "jobs_total": 29,
+  "jobs_israel": 0
+ },
+ {
+  "name": "CM.com",
+  "domain": "cm.com",
+  "careers_url": "https://cm.com/careers",
+  "provider": "recruitee",
+  "token": "cmcom",
+  "jobs_total": 15,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Ivo",
+  "domain": "ivo.ai",
+  "careers_url": "https://ivo.ai/careers",
+  "provider": "ashby",
+  "token": "ivo-inc",
+  "jobs_total": 40,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Descript",
+  "domain": "descript.com",
+  "careers_url": "https://descript.com/careers",
+  "provider": "greenhouse",
+  "token": "descript",
+  "jobs_total": 10,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Papercup",
+  "domain": "papercup.com",
+  "careers_url": "https://papercup.com/careers",
+  "provider": "lever",
+  "token": "rws",
+  "jobs_total": 71,
+  "jobs_israel": 1
+ },
+ {
+  "name": "Riverside FM",
+  "domain": "riverside.fm",
+  "careers_url": "https://riverside.fm/careers",
+  "provider": "comeet",
+  "token": "66.009::66926766692CDF00669CD22CDF133B",
+  "jobs_total": 22,
+  "jobs_israel": 14
+ },
+ {
+  "name": "Frontify",
+  "domain": "frontify.com",
+  "careers_url": "https://frontify.com/careers",
+  "provider": "ashby",
+  "token": "frontify",
+  "jobs_total": 12,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Velo3D",
+  "domain": "velo3d.com",
+  "careers_url": "https://velo3d.com/careers",
+  "provider": "lever",
+  "token": "velo3d",
+  "jobs_total": 37,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Pontera",
+  "domain": "pontera.com",
+  "careers_url": "https://pontera.com/careers",
+  "provider": "greenhouse",
+  "token": "pontera",
+  "jobs_total": 5,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Blockdaemon",
+  "domain": "blockdaemon.com",
+  "careers_url": "https://blockdaemon.com/careers",
+  "provider": "ashby",
+  "token": "blockdaemon",
+  "jobs_total": 2,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Primis",
+  "domain": "primis.tech",
+  "careers_url": "https://primis.tech/careers",
+  "provider": "comeet",
+  "token": "33.00C::33C102C33C19E013681D1C33C13686781D1C",
+  "jobs_total": 16,
+  "jobs_israel": 13
+ },
+ {
+  "name": "Moloco",
+  "domain": "moloco.com",
+  "careers_url": "https://moloco.com/careers",
+  "provider": "greenhouse",
+  "token": "moloco",
+  "jobs_total": 47,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Fieldin",
+  "domain": "fieldin.com",
+  "careers_url": "https://fieldin.com/careers",
+  "provider": "comeet",
+  "token": "68.001::86132463246324629E5010C24308430829E5",
+  "jobs_total": 1,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Socure",
+  "domain": "socure.com",
+  "careers_url": "https://socure.com/careers",
+  "provider": "ashby",
+  "token": "socure",
+  "jobs_total": 84,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Magic Software",
+  "domain": "magicsoftware.com",
+  "careers_url": "https://magicsoftware.com/careers",
+  "provider": "comeet",
+  "token": "19.00F::91F36BA52172D9B0247C247C5217247C2D9B",
+  "jobs_total": 26,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Hawk AI",
+  "domain": "hawk.ai",
+  "careers_url": "https://hawk.ai/careers",
+  "provider": "ashby",
+  "token": "hawk",
+  "jobs_total": 17,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Glia",
+  "domain": "glia.com",
+  "careers_url": "https://glia.com/careers",
+  "provider": "ashby",
+  "token": "glia",
+  "jobs_total": 23,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Monte Carlo Data",
+  "domain": "montecarlodata.com",
+  "careers_url": "https://montecarlodata.com/careers",
+  "provider": "ashby",
+  "token": "montecarlodata",
+  "jobs_total": 4,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Second Nature",
+  "domain": "secondnature.ai",
+  "careers_url": "https://secondnature.ai/careers",
+  "provider": "comeet",
+  "token": "FA.00C::AFC4CE44CE4AFC20F4AFC36EC57E057E057E0",
+  "jobs_total": 4,
+  "jobs_israel": 4
+ },
+ {
+  "name": "Sybill",
+  "domain": "sybill.ai",
+  "careers_url": "https://sybill.ai/careers",
+  "provider": "ashby",
+  "token": "sybill-ai",
+  "jobs_total": 7,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Vidmob",
+  "domain": "vidmob.com",
+  "careers_url": "https://vidmob.com/careers",
+  "provider": "ashby",
+  "token": "vidmob",
+  "jobs_total": 9,
+  "jobs_israel": 0
+ },
+ {
+  "name": "LaunchDarkly",
+  "domain": "launchdarkly.com",
+  "careers_url": "https://launchdarkly.com/careers",
+  "provider": "greenhouse",
+  "token": "launchdarkly",
+  "jobs_total": 52,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Techstars",
+  "domain": "techstars.com",
+  "careers_url": "https://techstars.com/careers",
+  "provider": "greenhouse",
+  "token": "techstars57",
+  "jobs_total": 1,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Feedvisor",
+  "domain": "feedvisor.com",
+  "careers_url": "https://feedvisor.com/careers",
+  "provider": "comeet",
+  "token": "11.00A::11A46834E582069C11A8D034E0",
+  "jobs_total": 2,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Verifone Israel",
+  "domain": "verifone.com",
+  "careers_url": "https://verifone.com/careers",
+  "provider": "greenhouse",
+  "token": "verifone",
+  "jobs_total": 41,
+  "jobs_israel": 1
+ },
+ {
+  "name": "Amplitude",
+  "domain": "amplitude.com",
+  "careers_url": "https://amplitude.com/careers",
+  "provider": "greenhouse",
+  "token": "amplitude",
+  "jobs_total": 36,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Mixpanel",
+  "domain": "mixpanel.com",
+  "careers_url": "https://mixpanel.com/careers",
+  "provider": "greenhouse",
+  "token": "mixpanel",
+  "jobs_total": 83,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Neo4j",
+  "domain": "neo4j.com",
+  "careers_url": "https://neo4j.com/careers",
+  "provider": "greenhouse",
+  "token": "neo4j",
+  "jobs_total": 54,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Contentsquare",
+  "domain": "contentsquare.com",
+  "careers_url": "https://contentsquare.com/careers",
+  "provider": "lever",
+  "token": "contentsquare",
+  "jobs_total": 26,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Hotjar",
+  "domain": "hotjar.com",
+  "careers_url": "https://hotjar.com/careers",
+  "provider": "lever",
+  "token": "contentsquare",
+  "jobs_total": 26,
+  "jobs_israel": 0
+ },
+ {
+  "name": "PlanetScale",
+  "domain": "planetscale.com",
+  "careers_url": "https://planetscale.com/careers",
+  "provider": "greenhouse",
+  "token": "planetscale",
+  "jobs_total": 13,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Quantum Metric",
+  "domain": "quantummetric.com",
+  "careers_url": "https://quantummetric.com/careers",
+  "provider": "lever",
+  "token": "quantummetric",
+  "jobs_total": 8,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Vercel",
+  "domain": "vercel.com",
+  "careers_url": "https://vercel.com/careers",
+  "provider": "greenhouse",
+  "token": "vercel",
+  "jobs_total": 87,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Supabase",
+  "domain": "supabase.com",
+  "careers_url": "https://supabase.com/careers",
+  "provider": "ashby",
+  "token": "supabase",
+  "jobs_total": 60,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Netlify",
+  "domain": "netlify.com",
+  "careers_url": "https://netlify.com/careers",
+  "provider": "greenhouse",
+  "token": "netlify",
+  "jobs_total": 1,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Fiddler AI",
+  "domain": "fiddler.ai",
+  "careers_url": "https://fiddler.ai/careers",
+  "provider": "ashby",
+  "token": "fiddler-ai",
+  "jobs_total": 8,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Clerk",
+  "domain": "clerk.com",
+  "careers_url": "https://clerk.com/careers",
+  "provider": "ashby",
+  "token": "clerk",
+  "jobs_total": 1,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Hightouch",
+  "domain": "hightouch.com",
+  "careers_url": "https://hightouch.com/careers",
+  "provider": "greenhouse",
+  "token": "hightouch",
+  "jobs_total": 85,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Incognia",
+  "domain": "incognia.com",
+  "careers_url": "https://incognia.com/careers",
+  "provider": "greenhouse",
+  "token": "incognia",
+  "jobs_total": 8,
+  "jobs_israel": 0
+ },
+ {
+  "name": "People.ai",
+  "domain": "people.ai",
+  "careers_url": "https://people.ai/careers",
+  "provider": "lever",
+  "token": "people-ai",
+  "jobs_total": 9,
+  "jobs_israel": 0
+ },
+ {
+  "name": "PandaDoc",
+  "domain": "pandadoc.com",
+  "careers_url": "https://pandadoc.com/careers",
+  "provider": "greenhouse",
+  "token": "pandadoc",
+  "jobs_total": 15,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Sonatype",
+  "domain": "sonatype.com",
+  "careers_url": "https://sonatype.com/careers",
+  "provider": "lever",
+  "token": "sonatype",
+  "jobs_total": 33,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Endor Labs",
+  "domain": "endorlabs.com",
+  "careers_url": "https://endorlabs.com/careers",
+  "provider": "greenhouse",
+  "token": "endorlabs",
+  "jobs_total": 29,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Reflectiz",
+  "domain": "reflectiz.com",
+  "careers_url": "https://reflectiz.com/careers",
+  "provider": "comeet",
+  "token": "CA.008::AC84B7840B035E82058AC8564035E856402058",
+  "jobs_total": 4,
+  "jobs_israel": 2
+ },
+ {
+  "name": "Escape",
+  "domain": "escape.tech",
+  "careers_url": "https://escape.tech/careers",
+  "provider": "ashby",
+  "token": "escape",
+  "jobs_total": 3,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Material Security",
+  "domain": "material.security",
+  "careers_url": "https://material.security/careers",
+  "provider": "ashby",
+  "token": "materialsecurity",
+  "jobs_total": 5,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Josys",
+  "domain": "josys.com",
+  "careers_url": "https://josys.com/careers",
+  "provider": "ashby",
+  "token": "josys",
+  "jobs_total": 25,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Nudge Security",
+  "domain": "nudgesecurity.com",
+  "careers_url": "https://nudgesecurity.com/careers",
+  "provider": "ashby",
+  "token": "nudgesecurity",
+  "jobs_total": 3,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Tamnoon",
+  "domain": "tamnoon.io",
+  "careers_url": "https://tamnoon.io/careers",
+  "provider": "ashby",
+  "token": "ashby-embed-demo-org",
+  "jobs_total": 9,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Transcend",
+  "domain": "transcend.io",
+  "careers_url": "https://transcend.io/careers",
+  "provider": "greenhouse",
+  "token": "transcendinc",
+  "jobs_total": 1,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Ketch",
+  "domain": "ketch.com",
+  "careers_url": "https://ketch.com/careers",
+  "provider": "greenhouse",
+  "token": "ketch",
+  "jobs_total": 4,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Tactile Games",
+  "domain": "tactilegames.com",
+  "careers_url": "https://tactilegames.com/careers",
+  "provider": "greenhouse",
+  "token": "tactilegames",
+  "jobs_total": 4,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Imubit",
+  "domain": "imubit.com",
+  "careers_url": "https://imubit.com/careers",
+  "provider": "greenhouse",
+  "token": "imubit",
+  "jobs_total": 6,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Immuta",
+  "domain": "immuta.com",
+  "careers_url": "https://immuta.com/careers",
+  "provider": "lever",
+  "token": "immuta",
+  "jobs_total": 14,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Infisical",
+  "domain": "infisical.com",
+  "careers_url": "https://infisical.com/careers",
+  "provider": "ashby",
+  "token": "infisical",
+  "jobs_total": 10,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Hippo Insurance",
+  "domain": "hippo.com",
+  "careers_url": "https://hippo.com/careers",
+  "provider": "greenhouse",
+  "token": "hippo70",
+  "jobs_total": 29,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Teleport",
+  "domain": "goteleport.com",
+  "careers_url": "https://goteleport.com/careers",
+  "provider": "ashby",
+  "token": "goteleport",
+  "jobs_total": 24,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Opal Security",
+  "domain": "opal.dev",
+  "careers_url": "https://opal.dev/careers",
+  "provider": "ashby",
+  "token": "opal",
+  "jobs_total": 20,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Morphisec",
+  "domain": "morphisec.com",
+  "careers_url": "https://morphisec.com/careers",
+  "provider": "comeet",
+  "token": "65.00C::56C1B1C2B600208825F42B601B1C0AD8",
+  "jobs_total": 1,
+  "jobs_israel": 1
+ },
+ {
+  "name": "Remote",
+  "domain": "remote.com",
+  "careers_url": "https://remote.com/jobs",
+  "provider": "greenhouse",
+  "token": "xai",
+  "jobs_total": 254,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Remote",
+  "domain": "remote.com",
+  "careers_url": "https://remote.com/jobs",
+  "provider": "greenhouse",
+  "token": "gomotive",
+  "jobs_total": 142,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Remote",
+  "domain": "remote.com",
+  "careers_url": "https://remote.com/jobs",
+  "provider": "lever",
+  "token": "highlandfleets-2",
+  "jobs_total": 12,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Remote",
+  "domain": "remote.com",
+  "careers_url": "https://remote.com/jobs",
+  "provider": "lever",
+  "token": "goalbookapp-2",
+  "jobs_total": 6,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Powtoon",
+  "domain": "powtoon.com",
+  "careers_url": "https://powtoon.com/jobs",
+  "provider": "workable",
+  "token": "powtoon",
+  "jobs_total": 6,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Mux",
+  "domain": "mux.com",
+  "careers_url": "https://mux.com/jobs",
+  "provider": "ashby",
+  "token": "mux",
+  "jobs_total": 2,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Clay",
+  "domain": "clay.com",
+  "careers_url": "https://clay.com/jobs",
+  "provider": "ashby",
+  "token": "claylabs",
+  "jobs_total": 58,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Silk",
+  "domain": "silk.us",
+  "careers_url": "https://silk.us/careers",
+  "provider": "comeet",
+  "token": "F6.00C::6FC29E8DF83EDCDF830E414F429E8DF837E0",
+  "jobs_total": 1,
+  "jobs_israel": 0
+ },
+ {
+  "name": "SingleStore",
+  "domain": "singlestore.com",
+  "careers_url": "https://singlestore.com/jobs",
+  "provider": "greenhouse",
+  "token": "singlestore",
+  "jobs_total": 33,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Firebolt",
+  "domain": "firebolt.io",
+  "careers_url": "https://firebolt.io/careers",
+  "provider": "comeet",
+  "token": "26.004::62424D80374424D824D8126C126C1EB41890",
+  "jobs_total": 3,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Zynga",
+  "domain": "zynga.com",
+  "careers_url": "https://zynga.com/jobs",
+  "provider": "greenhouse",
+  "token": "zyngacareers",
+  "jobs_total": 43,
+  "jobs_israel": 0
+ },
+ {
+  "name": "UBQ Materials",
+  "domain": "ubqmaterials.com",
+  "careers_url": "https://ubqmaterials.com/company/careers",
+  "provider": "recruitee",
+  "token": "ubqmaterials",
+  "jobs_total": 1,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Nozomi Networks",
+  "domain": "nozominetworks.com",
+  "careers_url": "https://nozominetworks.com/company/careers",
+  "provider": "greenhouse",
+  "token": "nozominetworks",
+  "jobs_total": 17,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Britive",
+  "domain": "britive.com",
+  "careers_url": "https://britive.com/company/careers",
+  "provider": "greenhouse",
+  "token": "britive",
+  "jobs_total": 15,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Anomali",
+  "domain": "anomali.com",
+  "careers_url": "https://anomali.com/company/careers",
+  "provider": "lever",
+  "token": "anomali",
+  "jobs_total": 9,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Imply",
+  "domain": "imply.io",
+  "careers_url": "https://imply.io/about/careers",
+  "provider": "greenhouse",
+  "token": "imply",
+  "jobs_total": 5,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Egress",
+  "domain": "egress.com",
+  "careers_url": "https://egress.com/careers/open-positions",
+  "provider": "greenhouse",
+  "token": "knowbe4",
+  "jobs_total": 61,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Fleetzero",
+  "domain": "fleetzero.com",
+  "careers_url": "https://fleetzero.com/",
+  "provider": "lever",
+  "token": "fleetzero",
+  "jobs_total": 6,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Nexus",
+  "domain": "nexus.xyz",
+  "careers_url": "https://nexus.xyz/",
+  "provider": "ashby",
+  "token": "nexus.xyz",
+  "jobs_total": 4,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Unitary",
+  "domain": "unitary.ai",
+  "careers_url": "https://unitary.ai/",
+  "provider": "workable",
+  "token": "unitary",
+  "jobs_total": 7,
+  "jobs_israel": 0
+ },
+ {
+  "name": "Fathom",
+  "domain": "fathom.video",
+  "careers_url": "https://fathom.video/",
+  "provider": "ashby",
+  "token": "fathom.video",
+  "jobs_total": 4,
+  "jobs_israel": 0
+ },
+ {
+  "name": "BuyMe",
+  "domain": "buyme.co.il",
+  "careers_url": "https://buyme.co.il/",
+  "provider": "comeet",
+  "token": "B2.008::2B8D980AE01050570D98187815C0570",
+  "jobs_total": 2,
+  "jobs_israel": 1
+ },
+ {
+  "name": "Odigos",
+  "domain": "odigos.io",
+  "careers_url": "https://odigos.io/",
+  "provider": "comeet",
+  "token": "5A.001::A5148372944339514A214A20A515CD92944",
+  "jobs_total": 2,
+  "jobs_israel": 0
+ }
+]

@@ -1,0 +1,131 @@
+name: Social sources (metered)
+
+# Everything in this workflow costs money per result, which is the only reason
+# it is a separate file from scrape.yml.
+#
+# Riding along on the free pass meant paying Apify on every scrape: at four
+# passes a day that is 120 paid sweeps a month instead of 15 — roughly $59
+# against $7 at 200 groups. Splitting the schedules is the whole saving.
+#
+# `concurrency: group: scrape` is SHARED WITH scrape.yml on purpose. The two
+# workflows write to the same tables through the same importer, and the
+# database is a small instance that has already been taken down once by
+# concurrent bulk writes. Sharing the group means one waits for the other.
+#
+# Required repository secrets:
+#   NEXT_PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
+#   POSTER_HASH_SALT     - refuses to run without it, by design
+#   APIFY_TOKEN          - without it every step here skips and the run is a
+#                          no-op, which is the correct behaviour for a fork.
+#   TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID - failure alerts, optional.
+#
+# NOT a secret, and deliberately UNSET: APIFY_ACTOR. The actor is chosen in
+# apify_groups.py and defaults to memo23. Setting it to
+# apify/facebook-groups-scraper costs 3-4x per post.
+
+# The live service was retired in October 2026, so this ships with its
+# `schedule:` trigger removed and `workflow_dispatch` only. Nothing fires in a
+# clone. The cadence it ran on is recorded below; put the `schedule:` block back
+# once your own secrets are in place.
+#
+# It ran on: cron "23 5 */2 * *"
+# Every second day at 05:23 UTC. The cadence and the --newer-than-hours 48
+# below are the same number twice: the sweep asks for posts newer than the
+# last sweep, so nothing is paid for twice.
+on:
+  workflow_dispatch:
+    inputs:
+      newer_than_hours:
+        description: "How far back to read. 48 matches the schedule; raise it to catch up after a gap."
+        required: false
+        default: "48"
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  social:
+    runs-on: ubuntu-latest
+    # Scheduled runs belong to the original deployment. A fork that enables
+    # Actions would otherwise start scraping on a timer with nothing
+    # configured; manual runs (workflow_dispatch) still work anywhere.
+    if: github.event_name != 'schedule' || github.repository_owner == 'baldiga'
+    # 45, not 20. The previous run was cancelled at the 20-minute mark part
+    # way through the Facebook sweep, which wasted the Apify spend entirely:
+    # the actor runs had been billed, the workflow died before the import step,
+    # and nothing reached the database. Reading ~185 groups in two batched
+    # actor runs does not reliably finish inside 20 minutes.
+    timeout-minutes: 45
+    env:
+      NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      POSTER_HASH_SALT: ${{ secrets.POSTER_HASH_SALT }}
+      APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install worker
+        working-directory: apps/worker
+        run: pip install -r requirements.txt
+
+      # Apify reads public groups on its own infrastructure — which is why
+      # this is the preferred Facebook path even though it is the paid one.
+      # At your own risk: see "Data sources and the law" in the README.
+      #
+      # --max-posts 20 is the FLOOR now, not the cap. Groups that have earned
+      # it carry their own `max_posts` in sources.config (24 of them, at 50),
+      # and the reader does one actor run per distinct cap. This flag is only
+      # the default for everyone else.
+      #
+      # It is a safety valve rather than a target either way: measured across
+      # the registered groups, a group produces about 1.4 new posts in two
+      # days, so at the scheduled 48-hour window neither number usually binds.
+      # It binds on a catch-up run with a wider window, which is exactly when
+      # the productive groups should be allowed to give more.
+      - name: Read groups via Apify
+        if: env.APIFY_TOKEN != ''
+        working-directory: apps/worker
+        continue-on-error: true
+        run: |
+          python -m jobswarm_scrape.cli fb-apify             --limit 200             --max-posts 20             --newer-than-hours "${{ github.event.inputs.newer_than_hours || '48' }}"
+
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      # Only the source this workflow scraped. Importing everything here
+      # would re-read the boards' cached pages for no benefit, and every row it
+      # touched would be a write the free pass is about to make anyway.
+      #
+      # No --fail-on-empty: unlike the boards pass, zero candidates is a
+      # perfectly ordinary outcome here. Without APIFY_TOKEN the step above
+      # skips, and a fork should not get a red tick for that.
+      - name: Decompose and import
+        if: env.APIFY_TOKEN != ''
+        run: pnpm import:scraped --sources=facebook
+
+      - name: Tell Telegram it failed
+        if: failure() && env.TELEGRAM_BOT_TOKEN != ''
+        env:
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          curl -fsS -X POST \
+            "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -d "chat_id=${TELEGRAM_CHAT_ID}" \
+            -d "disable_web_page_preview=true" \
+            --data-urlencode "text=Jobsworm: the metered social pass failed. ${RUN_URL}"

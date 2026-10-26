@@ -1,0 +1,884 @@
+# Israeli tech companies + multinational R&D sites in Israel.
+# Format:  Name | domain | optional provider hints (csv) | optional explicit token
+# Used by verify_ats.py to brute-force plausible ATS tokens.
+
+# ---- Public / unicorns / late stage ----
+Monday.com | monday.com
+Wix | wix.com
+Fiverr | fiverr.com
+Lemonade | lemonade.com
+Payoneer | payoneer.com
+Riskified | riskified.com
+Similarweb | similarweb.com
+JFrog | jfrog.com
+Cellebrite | cellebrite.com
+CyberArk | cyberark.com
+Check Point | checkpoint.com
+NICE | nice.com
+Verint | verint.com
+Amdocs | amdocs.com
+Radware | radware.com
+Allot | allot.com
+Gilat | gilat.com
+Camtek | camtek.com
+Nova | novami.com
+Tower Semiconductor | towersemi.com
+AudioCodes | audiocodes.com
+CEVA | ceva-dsp.com
+Valens | valens.com
+Kaltura | kaltura.com
+Taboola | taboola.com
+Outbrain | outbrain.com
+Cato Networks | catonetworks.com
+Snyk | snyk.io
+Wiz | wiz.io
+Armis | armis.com
+Claroty | claroty.com
+SentinelOne | sentinelone.com
+Orca Security | orca.security
+Aqua Security | aquasec.com
+Axonius | axonius.com
+Cybereason | cybereason.com
+Transmit Security | transmitsecurity.com
+BigID | bigid.com
+Coralogix | coralogix.com
+Logz.io | logz.io
+Rookout | rookout.com
+Lightrun | lightrun.com
+Firebolt | firebolt.io
+Imubit | imubit.com
+Deci AI | deci.ai
+Run AI | run.ai
+Gong | gong.io
+WalkMe | walkme.com
+AppsFlyer | appsflyer.com
+Bizzabo | bizzabo.com
+Yotpo | yotpo.com
+Optimove | optimove.com
+Dynamic Yield | dynamicyield.com
+Namogoo | namogoo.com
+Syte | syte.ai
+Trigo | trigoretail.com
+Hippo Insurance | hippo.com
+Next Insurance | nextinsurance.com
+Melio | meliopayments.com
+Rapyd | rapyd.net
+Tipalti | tipalti.com
+Papaya Global | papayaglobal.com
+HiBob | hibob.com
+Personetics | personetics.com
+Forter | forter.com
+Bluevine | bluevine.com
+eToro | etoro.com
+Pagaya | pagaya.com
+Earnix | earnix.com
+Nayax | nayax.com
+Via | ridewithvia.com
+Moovit | moovit.com
+Gett | gett.com
+Fabric | fabric.inc
+Trax | traxretail.com
+Vayyar | vayyar.com
+Innoviz | innoviz.tech
+Mobileye | mobileye.com
+REE Automotive | ree.auto
+Arbe Robotics | arbe.ai
+Foretellix | foretellix.com
+Otonomo | otonomo.io
+Upstream Security | upstream.auto
+Cognyte | cognyte.com
+Cymulate | cymulate.com
+Perimeter 81 | perimeter81.com
+Guardicore | guardicore.com
+Silverfort | silverfort.com
+Salt Security | salt.security
+Noname Security | nonamesecurity.com
+Talon Cyber Security | talon-sec.com
+Grip Security | grip.security
+Dig Security | dig.security
+Laminar Security | laminarsecurity.com
+Satori Cyber | satoricyber.com
+Fireblocks | fireblocks.com
+StarkWare | starkware.co
+Chain Reaction | chainreaction.com
+Hailo | hailo.ai
+NeuroBlade | neuroblade.com
+Habana Labs | habana.ai
+Speedata | speedata.io
+NextSilicon | nextsilicon.com
+WEKA | weka.io
+VAST Data | vastdata.com
+Lightbits Labs | lightbitslabs.com
+Silk | silk.us
+Zesty | zesty.co
+Spot by NetApp | spot.io
+env0 | env0.com
+Torq | torq.io
+Anecdotes | anecdotes.ai
+Vulcan Cyber | vulcan.io
+Cyera | cyera.io
+Zenity | zenity.io
+Descope | descope.com
+Frontegg | frontegg.com
+Stigg | stigg.io
+Port | getport.io
+Komodor | komodor.com
+Groundcover | groundcover.com
+Jit Security | jit.io
+Legit Security | legitsecurity.com
+OX Security | ox.security
+Apiiro | apiiro.com
+Backslash Security | backslash.security
+Arnica | arnica.io
+Sweet Security | sweet.security
+Upwind Security | upwind.io
+Miggo Security | miggo.io
+Playtika | playtika.com
+Plarium | plarium.com
+Moon Active | moonactive.com
+SciPlay | sciplay.com
+888 Holdings | 888holdings.com
+Playtech | playtech.com
+Sisense | sisense.com
+Panorays | panorays.com
+Fundbox | fundbox.com
+Lusha | lusha.com
+Zoomin Software | zoominsoftware.com
+Aidoc | aidoc.com
+Nanox | nanox.vision
+InSightec | insightec.com
+Teva Pharmaceutical | teva.co.il
+
+# ---- Multinational R&D centers in Israel ----
+Google | google.com
+Meta | meta.com
+Microsoft | microsoft.com
+Intel | intel.com
+NVIDIA | nvidia.com
+Apple | apple.com
+Amazon | amazon.com
+Salesforce | salesforce.com
+SAP | sap.com
+VMware | vmware.com
+Dell Technologies | dell.com
+HP | hp.com
+IBM | ibm.com
+Qualcomm | qualcomm.com
+Broadcom | broadcom.com
+AMD | amd.com
+Applied Materials | appliedmaterials.com
+Lam Research | lamresearch.com
+KLA | kla.com
+Western Digital | westerndigital.com
+Micron | micron.com
+Marvell | marvell.com
+Synopsys | synopsys.com
+Cadence | cadence.com
+Siemens | siemens.com
+Autodesk | autodesk.com
+Unity Technologies | unity.com
+PayPal | paypal.com
+Uber | uber.com
+Lyft | lyft.com
+Snap | snap.com
+Pinterest | pinterest.com
+Airbnb | airbnb.com
+Booking | booking.com
+eBay | ebay.com
+Yahoo | yahoo.com
+Verizon | verizon.com
+Cisco | cisco.com
+Juniper Networks | juniper.net
+Nokia | nokia.com
+Ericsson | ericsson.com
+Philips | philips.com
+GE Healthcare | gehealthcare.com
+Medtronic | medtronic.com
+Johnson Controls | johnsoncontrols.com
+Honeywell | honeywell.com
+General Motors | gm.com
+Continental | continental.com
+Bosch | bosch.com
+Stellantis | stellantis.com
+Nike | nike.com
+Mastercard | mastercard.com
+Visa | visa.com
+Citi | citi.com
+Barclays | barclays.com
+Morgan Stanley | morganstanley.com
+Goldman Sachs | goldmansachs.com
+JPMorgan Chase | jpmorganchase.com
+Deutsche Bank | db.com
+Akamai | akamai.com
+Cloudflare | cloudflare.com
+Datadog | datadoghq.com
+Elastic | elastic.co
+MongoDB | mongodb.com
+Confluent | confluent.io
+HashiCorp | hashicorp.com
+GitLab | gitlab.com
+Atlassian | atlassian.com
+Twilio | twilio.com
+Zendesk | zendesk.com
+HubSpot | hubspot.com
+Workday | workday.com
+ServiceNow | servicenow.com
+Splunk | splunk.com
+Palo Alto Networks | paloaltonetworks.com
+Fortinet | fortinet.com
+Zscaler | zscaler.com
+CrowdStrike | crowdstrike.com
+Tenable | tenable.com
+Rapid7 | rapid7.com
+Okta | okta.com
+Proofpoint | proofpoint.com
+Varonis | varonis.com
+Imperva | imperva.com
+Forcepoint | forcepoint.com
+Trellix | trellix.com
+
+# ---- Cyber security (Israel-heavy) ----
+Akeyless | akeyless.io
+Semperis | semperis.com
+Cyolo | cyolo.io
+Coro | coro.net
+Hunters | hunters.security
+Intezer | intezer.com
+Pentera | pentera.io
+Sygnia | sygnia.co
+Deep Instinct | deepinstinct.com
+Morphisec | morphisec.com
+Nozomi Networks | nozominetworks.com
+SafeBreach | safebreach.com
+CardinalOps | cardinalops.com
+Seemplicity | seemplicity.io
+Oligo Security | oligo.security
+Astrix Security | astrix.security
+Reco | reco.ai
+Wing Security | wing.security
+Valence Security | valencesecurity.com
+Adaptive Shield | adaptive-shield.com
+Torii | toriihq.com
+Nagomi Security | nagomisecurity.com
+Dazz | dazz.io
+Gem Security | gem.security
+Ermetic | ermetic.com
+Piiano | piiano.com
+Cycode | cycode.com
+Sentra | sentra.io
+Prompt Security | prompt.security
+Aim Security | aim.security
+Lasso Security | lasso.security
+Pillar Security | pillar.security
+Noma Security | noma.security
+Zafran Security | zafran.io
+Token Security | token.security
+Entro Security | entro.security
+Britive | britive.com
+Authomize | authomize.com
+Veriti | veriti.ai
+Cyberint | cyberint.com
+KELA | ke-la.com
+Cyabra | cyabra.com
+BlueVoyant | bluevoyant.com
+Sepio | sepiocyber.com
+Cynerio | cynerio.com
+Medigate | medigate.io
+Illusive Networks | illusive.com
+Perception Point | perception-point.io
+Odix | odi-x.com
+Votiro | votiro.com
+Source Defense | sourcedefense.com
+Reblaze | reblaze.com
+Traceable | traceable.ai
+Neosec | neosec.com
+Imvision | imvision.ai
+L7 Defense | l7defense.com
+Checkmarx | checkmarx.com
+Mend | mend.io
+Bright Security | brightsec.com
+XM Cyber | xmcyber.com
+Radiflow | radiflow.com
+Waterfall Security | waterfall-security.com
+Karamba Security | karambasecurity.com
+Regulus Cyber | regulus.com
+Cobwebs Technologies | cobwebs.com
+Cynet | cynet.com
+Guardz | guardz.com
+Cyvers | cyvers.ai
+Blink Ops | blinkops.com
+Cyberpion | ionix.io
+Ionix | ionix.io
+Scribe Security | scribesecurity.com
+Enso Security | enso.security
+Kayak Security | kayak.security
+Rezilion | rezilion.com
+Vicarius | vicarius.io
+Nucleus Security | nucleussec.com
+Trustnet | trustnet.co.il
+Sasa Software | sasa-software.com
+Odix Ltd | odi-x.com
+Cyberbit | cyberbit.com
+ThriveDX | thrivedx.com
+HackerU | hackeru.com
+Cymotive | cymotive.com
+Argus Cyber Security | argus-sec.com
+GuardKnox | guardknox.com
+C2A Security | c2a-sec.com
+Enigmatos | enigmatos.com
+Otorio | otorio.com
+SCADAfence | scadafence.com
+Sepio Systems | sepiocyber.com
+CyberMDX | cybermdx.com
+Nyotron | nyotron.com
+Minerva Labs | minerva-labs.com
+enSilo | ensilo.com
+Hysolate | hysolate.com
+Talon Security | talon-sec.com
+Kovrr | kovrr.com
+Sayata | sayatalabs.com
+Vulcan | vulcan.io
+Skyhawk Security | skyhawk.security
+Radware Ltd | radware.com
+
+# ---- Fintech / insurtech ----
+Unit | unit.co
+PayEm | payem.com
+Trullion | trullion.com
+Mesh Payments | meshpayments.com
+Balance | getbalance.com
+Sunbit | sunbit.com
+Justt | justt.ai
+Nuvei | nuvei.com
+Credorax | credorax.com
+Finaro | finaro.com
+BlueSnap | bluesnap.com
+Rewire | rewire.to
+Chargeflow | chargeflow.io
+Okoora | okoora.com
+Behalf | behalf.com
+Lendbuzz | lendbuzz.com
+At-Bay | at-bay.com
+Vesttoo | vesttoo.com
+Novidea | novidea.com
+Sapiens | sapiens.com
+Planck | planck.ai
+Bringg | bringg.com
+Identiq | identiq.com
+ThetaRay | thetaray.com
+AU10TIX | au10tix.com
+Solidus Labs | soliduslabs.com
+Pontera | pontera.com
+Stampli | stampli.com
+Datarails | datarails.com
+Gaviti | gaviti.com
+Liquidity Group | liquiditygroup.com
+Plus500 | plus500.com
+Kaleido | kaleido.io
+Blockdaemon | blockdaemon.com
+Chainalysis | chainalysis.com
+Curv | curv.co
+GK8 | gk8.io
+Unbound Security | unboundsecurity.com
+QEDIT | qed-it.com
+Orbs | orbs.com
+Kirobo | kirobo.io
+Simplex | simplex.com
+Bits of Gold | bitsofgold.co.il
+eToro Group | etoro.com
+Colu | colu.com
+Rewire Financial | rewire.to
+Tarya | tarya.com
+Blender | blender.co.il
+Riseup | riseup.co.il
+Personetics Technologies | personetics.com
+Payoneer Global | payoneer.com
+Nayax Ltd | nayax.com
+Max It Finance | max.co.il
+Isracard | isracard.co.il
+Bank Leumi | leumi.co.il
+Bank Hapoalim | bankhapoalim.co.il
+Mizrahi Tefahot | mizrahi-tefahot.co.il
+Discount Bank | discountbank.co.il
+Migdal Insurance | migdal.co.il
+Harel Insurance | harel-group.co.il
+Clal Insurance | clalbit.co.il
+Phoenix Insurance | fnx.co.il
+Menora Mivtachim | menoramivt.co.il
+
+# ---- Devtools / cloud / data ----
+Redis | redis.com
+Aerospike | aerospike.com
+SQream | sqream.com
+Imply | imply.io
+StarTree | startree.ai
+Rivery | rivery.io
+Panoply | panoply.io
+Treasure Data | treasuredata.com
+Databand | databand.ai
+Monte Carlo Data | montecarlodata.com
+Datorama | datorama.com
+Explorium | explorium.ai
+BigPanda | bigpanda.io
+Lightricks | lightricks.com
+Granulate | granulate.io
+Duda | duda.co
+Elementor | elementor.com
+Webflow | webflow.com
+Cloudinary | cloudinary.com
+Testim | testim.io
+Applitools | applitools.com
+Blinq | blinq.io
+Sealights | sealights.io
+Tabnine | tabnine.com
+Qodo | qodo.ai
+Swimm | swimm.io
+Datree | datree.io
+Nobl9 | nobl9.com
+Lumigo | lumigo.io
+Epsagon | epsagon.com
+Aspecto | aspecto.io
+Helios | gethelios.dev
+Odigos | odigos.io
+Cast AI | cast.ai
+ScaleOps | scaleops.com
+PerfectScale | perfectscale.io
+Finout | finout.io
+Vantage | vantage.sh
+Kubecost | kubecost.com
+Pulumi | pulumi.com
+Firefly | firefly.ai
+Infracost | infracost.io
+CircleCI | circleci.com
+Cloudify | cloudify.co
+Quali | quali.com
+Configu | configu.com
+Split | split.io
+Optimizely | optimizely.com
+LaunchDarkly | launchdarkly.com
+Statsig | statsig.com
+Amplitude | amplitude.com
+Mixpanel | mixpanel.com
+Heap | heap.io
+Pendo | pendo.io
+FullStory | fullstory.com
+Glassbox | glassbox.com
+Contentsquare | contentsquare.com
+Quantum Metric | quantummetric.com
+Hotjar | hotjar.com
+Iguazio | iguazio.com
+Qwak | qwak.com
+Dataloop | dataloop.ai
+Datagen | datagen.tech
+cnvrg | cnvrg.io
+Deepchecks | deepchecks.com
+Superwise | superwise.ai
+Aporia | aporia.com
+Fiddler AI | fiddler.ai
+Anodot | anodot.com
+Upsolver | upsolver.com
+Equalum | equalum.io
+Infinidat | infinidat.com
+Zadara | zadara.com
+Excelero | excelero.com
+Kaminario | silk.us
+E8 Storage | e8storage.com
+Reduxio | reduxio.com
+Stratoscale | stratoscale.com
+Ionir | ionir.com
+CloudZone | cloudzone.io
+DoiT International | doit.com
+Emma | emma.ms
+Spot Israel | spot.io
+NetApp | netapp.com
+Nutanix | nutanix.com
+Pure Storage | purestorage.com
+Snowflake | snowflake.com
+Databricks | databricks.com
+
+# ---- Consumer / marketplaces / adtech / media ----
+Houzz | houzz.com
+Zoomd | zoomd.com
+ironSource | is.com
+Digital Turbine | digitalturbine.com
+AppLovin | applovin.com
+Tremor International | tremorinternational.com
+Nexxen | nexxen.com
+Perion | perion.com
+Undertone | undertone.com
+Skai | skai.io
+CHEQ | cheq.ai
+GeoEdge | geoedge.com
+Adjust | adjust.com
+Singular | singular.net
+Bidalgo | bidalgo.com
+AppCharge | appcharge.com
+SuperAwesome | superawesome.com
+Minute Media | minutemedia.com
+EX.CO | ex.co
+Vimeo | vimeo.com
+Verbit | verbit.ai
+aiOla | aiola.ai
+AI21 Labs | ai21.com
+Hour One | hourone.ai
+D-ID | d-id.com
+Bria | bria.ai
+Pixellot | pixellot.tv
+WSC Sports | wsc-sports.com
+Wolt | wolt.com
+Nexar | getnexar.com
+Autofleet | autofleet.io
+Oosto | oosto.com
+Corsight AI | corsight.ai
+BriefCam | briefcam.com
+Cortica | cortica.com
+Prospera | prospera.ag
+Taranis | taranis.com
+Agritask | agritask.com
+Beewise | beewise.ag
+CropX | cropx.com
+Netafim | netafim.com
+SolarEdge | solaredge.com
+Electreon | electreon.com
+Eviation | eviation.com
+Elbit Systems | elbitsystems.com
+Israel Aerospace Industries | iai.co.il
+Rafael Advanced Defense Systems | rafael.co.il
+Stratasys | stratasys.com
+Overwolf | overwolf.com
+Superplay | superplay.com
+Papaya Gaming | papayagaming.com
+Tactile Games | tactilegames.com
+Candivore | candivore.com
+Huuuge Games | huuugegames.com
+Product Madness | productmadness.com
+Playstudios | playstudios.com
+Jelly Button | jellybtn.com
+Crazy Labs | crazylabs.com
+TabTale | tabtale.com
+Pixel Federation | pixelfederation.com
+Sidekick | sidekick.com
+Ilyon | ilyon.net
+Playtika Holding | playtika.com
+Zynga | zynga.com
+Roblox | roblox.com
+Rovio | rovio.com
+Supersonic | supersonic.com
+Mixtiles | mixtiles.com
+Guesty | guesty.com
+Placer.ai | placer.ai
+Bringoz | bringoz.com
+Buildots | buildots.com
+Optibus | optibus.com
+Fetcherr | fetcherr.io
+Windward | windward.ai
+Freightos | freightos.com
+40seas | 40seas.com
+Fleetzero | fleetzero.com
+Zim | zim.com
+El Al | elal.com
+Israir | israir.co.il
+
+# ---- Healthtech / biotech ----
+Viz.ai | viz.ai
+Nucleai | nucleai.ai
+Ibex Medical Analytics | ibex-ai.com
+Imagene AI | imagene-ai.com
+Sight Diagnostics | sightdx.com
+MyHeritage | myheritage.com
+K Health | khealth.com
+TytoCare | tytocare.com
+Datos Health | datos-health.com
+Medisafe | medisafe.com
+Belong Life | belong.life
+DarioHealth | dariohealth.com
+Nanit | nanit.com
+Brainsway | brainsway.com
+Itamar Medical | itamar-medical.com
+Memic | memicmed.com
+XACT Robotics | xactrobotics.com
+ReWalk Robotics | rewalk.com
+Healthy.io | healthy.io
+Diagnostic Robotics | diagnosticrobotics.com
+Navina | navina.ai
+Genoox | genoox.com
+Emedgene | emedgene.com
+Variantyx | variantyx.com
+Evogene | evogene.com
+Compugen | cgen.com
+Pluri | pluri-biotech.com
+BiomX | biomx.com
+Zebra Medical Vision | zebra-med.com
+Vim | getvim.com
+Sword Health | swordhealth.com
+Curebase | curebase.com
+Immunai | immunai.com
+CytoReason | cytoreason.com
+Quris AI | quris.ai
+Aidoc Medical | aidoc.com
+Theator | theator.io
+Beyond Air | beyondair.net
+Insightec | insightec.com
+Sheba | sheba.co.il
+
+# ---- HR tech / productivity / SaaS ----
+Deel | deel.com
+Remote | remote.com
+Velocity Global | velocityglobal.com
+Gloat | gloat.com
+Comeet | comeet.com
+Connecteam | connecteam.com
+Rippling | rippling.com
+Personio | personio.com
+Notion | notion.so
+Miro | miro.com
+Figma | figma.com
+Canva | canva.com
+Asana | asana.com
+Airtable | airtable.com
+ClickUp | clickup.com
+Smartsheet | smartsheet.com
+Wrike | wrike.com
+Loom | loom.com
+Fireflies | fireflies.ai
+Otter.ai | otter.ai
+Front | front.com
+Intercom | intercom.com
+Drift | drift.com
+Chili Piper | chilipiper.com
+Clari | clari.com
+Outreach | outreach.io
+Salesloft | salesloft.com
+Apollo | apollo.io
+ZoomInfo | zoominfo.com
+Cognism | cognism.com
+Demandbase | demandbase.com
+6sense | 6sense.com
+Klaviyo | klaviyo.com
+Braze | braze.com
+Iterable | iterable.com
+Insider | useinsider.com
+Bloomreach | bloomreach.com
+Attentive | attentive.com
+Lightico | lightico.com
+Centrical | centrical.com
+Kryon Systems | kryonsystems.com
+EasySend | easysend.ai
+Vcita | vcita.com
+Workiz | workiz.com
+Powtoon | powtoon.com
+Storydoc | storydoc.com
+DealHub | dealhub.io
+SetSail | setsail.co
+Voyantis | voyantis.ai
+Pecan AI | pecan.ai
+Roojoom | roojoom.com
+Hyro | hyro.ai
+Level AI | thelevel.ai
+Cognigy | cognigy.com
+Qmarkets | qmarkets.net
+Stoke Talent | stoketalent.com
+Twine | twine.net
+Wilco | trywilco.com
+Tastewise | tastewise.io
+Revuze | revuze.it
+SparkBeyond | sparkbeyond.com
+Peak AI | peak.ai
+Evinced | evinced.com
+Definely | definely.com
+Darrow AI | darrow.ai
+Lawgeex | lawgeex.com
+LawGood | lawgood.com
+Luminance | luminance.com
+Ivo | ivo.ai
+Clarity | clarity.ai
+
+# ---- Semis / hardware / deep tech ----
+Proteantecs | proteantecs.com
+Xsight Labs | xsightlabs.com
+Quantum Machines | quantum-machines.co
+Classiq | classiq.io
+Quantum Art | quantum-art.tech
+Qedma | qedma.com
+Hailo Technologies | hailo.ai
+DriveNets | drivenets.com
+Valens Semiconductor | valens.com
+Autotalks | auto-talks.com
+Vayyar Imaging | vayyar.com
+Newsight Imaging | nstimaging.com
+TriEye | trieye.tech
+Opsys Tech | opsys-tech.com
+Oryx Vision | oryxvision.com
+Innoviz Technologies | innoviz.tech
+Foresight Autonomous | foresightauto.com
+Cognata | cognata.com
+Applied Materials Israel | appliedmaterials.com
+Nova Ltd | novami.com
+Camtek Ltd | camtek.com
+Orbotech | orbotech.com
+Tower Jazz | towersemi.com
+Mellanox | nvidia.com
+Annapurna Labs | annapurnalabs.com
+DSP Group | dspg.com
+Ceva | ceva-dsp.com
+Weebit Nano | weebit-nano.com
+Pixel Photonics | pixel-photonics.com
+Nanofabrica | nano-fabrica.com
+Velo3D | velo3d.com
+Massivit | massivit3d.com
+Highcon | highcon.net
+Kornit Digital | kornit.com
+Scodix | scodix.com
+Landa Digital Printing | landanano.com
+Nur Macroprinters | nur.com
+Indigo | hp.com
+Zoominfo Ltd | zoominfo.com
+
+# ---- Broad Israeli startup sweep ----
+AnyClip | anyclip.com
+Augury | augury.com
+Aurora Labs | aurora-labs.com
+AutoLeadStar | autoleadstar.com
+Axis Security | axissecurity.com
+Ayehu | ayehu.com
+BeeHero | beehero.io
+BeyondMinds | beyondminds.ai
+Binah AI | binah.ai
+Bond | bond.co
+Cellwize | cellwize.com
+Cimatron | cimatron.com
+Cluster | cluster.com
+Commit | commit.com
+Deepdub | deepdub.ai
+Edgybees | edgybees.com
+Eko | eko.com
+Enzymit | enzymit.com
+Exodigo | exodigo.ai
+Fieldin | fieldin.com
+Guardio | guard.io
+Hexa | hexa3d.io
+Hi Auto | hi.auto
+Hoopo | hoopo.io
+Immunai Ltd | immunai.com
+Indegy | indegy.com
+Infinipoint | infinipoint.io
+Innovid | innovid.com
+Inspekto | inspekto.com
+Intuition Robotics | intuitionrobotics.com
+Kando | kando.eco
+Kape Technologies | kape.com
+Kitov | kitov.ai
+Landa | landa.app
+Maytronics | maytronics.com
+Nexite | nexite.io
+Odysight | odysight.ai
+Optimal Plus | optimalplus.com
+Orcam | orcam.com
+Ottopia | ottopia.tech
+Own Company | owndata.com
+Panaya | panaya.com
+Parametrix | parametrixinsurance.com
+Percepto | percepto.co
+Radcom | radcom.com
+Rail Vision | railvision.io
+Resonai | resonai.com
+Scopio Labs | scopiolabs.com
+Seebo | seebo.com
+Shopic | shopic.co
+Skyline AI | skyline.ai
+Snappy | snappy.com
+Supersmart | supersmart.me
+SupPlant | supplant.me
+Trigo Retail | trigoretail.com
+Twiggle | twiggle.com
+UVeye | uveye.com
+Veev | veev.com
+Viber | viber.com
+Visualead | visualead.com
+Waze | waze.com
+Wisdo | wisdo.com
+Worthy | worthy.com
+Zoomd Technologies | zoomd.com
+Cybellum | cybellum.com
+Kaltura Israel | kaltura.com
+Bizzabo Ltd | bizzabo.com
+Yotpo Ltd | yotpo.com
+Bright Data | brightdata.com
+Luminati | brightdata.com
+Oxylabs | oxylabs.io
+SimilarTech | similartech.com
+Semrush | semrush.com
+Wibbitz | wibbitz.com
+Vidmob | vidmob.com
+Zoominfo Technologies | zoominfo.com
+StoreDot | store-dot.com
+Phinergy | phinergy.com
+Addionics | addionics.com
+H2Pro | h2pro.co
+Brenmiller Energy | bren-energy.com
+Enlight Renewable Energy | enlightenergy.co.il
+Doral Group | doralenergy.co.il
+Sonovia | sonoviatech.com
+Wiliot | wiliot.com
+Nexite Ltd | nexite.io
+Sodyo | sodyo.com
+Vi | vitrainer.com
+Tulip Interfaces | tulip.co
+Feedvisor | feedvisor.com
+Riskified Ltd | riskified.com
+Fundbox Ltd | fundbox.com
+Fyllo | fyllo.com
+Yodfat | yodfat.com
+Novidea Software | novidea.com
+Nym Health | nym.health
+Torii HQ | toriihq.com
+Zoomin | zoominsoftware.com
+Frontline | frontline.io
+Augmedix | augmedix.com
+Sight Machine | sightmachine.com
+Nexar Ltd | getnexar.com
+Anagog | anagog.com
+Rapid API | rapidapi.com
+Kaltura Media | kaltura.com
+Namogoo Technologies | namogoo.com
+Optimove Ltd | optimove.com
+Dynamic Yield Israel | dynamicyield.com
+Bizzy | bizzy.co.il
+Increff | increff.com
+Syte Visual | syte.ai
+Fabric Retail | fabric.inc
+Trigo Vision | trigoretail.com
+Wiliot Ltd | wiliot.com
+Nexite Vision | nexite.io
+Standard AI | standard.ai
+Shopify | shopify.com
+Lightspeed Commerce | lightspeedhq.com
+Global-e | global-e.com
+Riskified Israel | riskified.com
+Yotpo Israel | yotpo.com
+Rewind | rewind.ai
+Bit | bit.dev
+Vercel | vercel.com
+Netlify | netlify.com
+Supabase | supabase.com
+Neon | neon.tech
+Prisma | prisma.io
+Clerk | clerk.com
+WorkOS | workos.com
+Stytch | stytch.com
+Auth0 | auth0.com
+Descope Inc | descope.com
+Transmit | transmitsecurity.com
+Nok Nok Labs | noknok.com
+Incognia | incognia.com
+BioCatch | biocatch.com
+SecuredTouch | securedtouch.com
+Unbotify | unbotify.com
+PerimeterX | humansecurity.com
+HUMAN Security | humansecurity.com
+Cheq AI | cheq.ai
+DoubleVerify | doubleverify.com
+Integral Ad Science | integralads.com
+Moat | moat.com
+Adloox | adloox.com
+Protected Media | protectedmedia.com

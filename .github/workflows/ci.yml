@@ -1,0 +1,104 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# The gitleaks action lists a pull request's commits to decide what to scan, and the
+# default token cannot do that without `pull-requests: read` — it fails the job with
+# "403 Resource not accessible by integration", which looks exactly like a detected
+# leak and is not one. Declaring the block at all also drops every other scope to
+# none, which is what a public repository running CI on strangers' pull requests
+# wants.
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Unit tests
+        run: pnpm test
+
+      - name: Lint
+        run: pnpm lint
+
+      # `pnpm --filter web build` typechecks web and whatever web imports, and
+      # that is not everything. `packages/adapters` is worker- and script-side,
+      # so nothing in CI ever compiled it — a syntax error in a comment block
+      # sat in `import-scraped.ts` through a green build, a green test run and
+      # a push, and only surfaced when a scheduled job that had already spent
+      # Apify credit tried to run the importer and died before writing.
+      - name: Typecheck the packages web does not compile
+        run: pnpm typecheck
+
+      - name: Build web
+        run: pnpm --filter web build
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: https://placeholder.supabase.co
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: placeholder-anon-key
+
+  migrations:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: supabase/setup-cli@v1
+        with:
+          version: latest
+      - name: Apply migrations to a throwaway Postgres
+        run: |
+          supabase start --exclude studio,realtime,storage-api,imgproxy,edge-runtime,logflare,vector
+          supabase db reset --local
+
+  # Secret scanning on every push and pull request, across the full history of
+  # what is being pushed. The repository is public: a key that lands here is
+  # leaked the moment it is pushed, and deleting it afterwards does not help —
+  # rotate it.
+  secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  # Personal data that is not a secret, so no scanner knows to look for it: the
+  # maintainer's phone number and private addresses, the production project
+  # ref, local paths. The patterns are themselves that data, so they live in a
+  # repository secret (OSS_DENYLIST, one extended regex per line) and never in
+  # a file. Only file names are printed, because the log of a public
+  # repository is public too. Skipped where the secret is not set, i.e. forks.
+  denylist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check tracked files against the denylist
+        env:
+          OSS_DENYLIST: ${{ secrets.OSS_DENYLIST }}
+        run: |
+          if [ -z "$OSS_DENYLIST" ]; then
+            echo "OSS_DENYLIST is not set; skipping."
+            exit 0
+          fi
+          printf '%s\n' "$OSS_DENYLIST" | sed '/^[[:space:]]*$/d' > "$RUNNER_TEMP/denylist"
+          if git grep -l -I -i -E -f "$RUNNER_TEMP/denylist" -- . > "$RUNNER_TEMP/hits"; then
+            echo "::error::Denylisted personal data found in:"
+            cat "$RUNNER_TEMP/hits"
+            exit 1
+          fi
+          echo "No denylisted content."

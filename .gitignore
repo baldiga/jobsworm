@@ -1,0 +1,59 @@
+node_modules/
+.next/
+.vercel/
+.turbo/
+dist/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+supabase/.temp/
+supabase/.branches/
+scripts/brand/.cache/
+__pycache__/
+*.pyc
+data/raw/
+data/samples/
+.DS_Store
+Thumbs.db
+
+# seed working directories (intermediate enumeration output)
+data/_seed_work/
+data/_seed_work2/
+data/_seed_work*/
+scripts/dev/
+
+.vercel
+.env*
+!.env.example
+.scratch/
+
+# Scratch API captures pulled while investigating a source.
+/spec.json
+/sample.json
+/big.json
+/li.json
+
+# Agent Skills installed via `npx skills add` — tooling, not project source.
+.agents/
+.claude/skills/
+skills-lock.json
+
+# Playwright MCP session artifacts (console logs, page snapshots).
+.playwright-mcp/
+
+# Facebook group lists produced by scripts/seed/fb_group_*.py and the
+# fb-discover step. They name third-party communities and are loaded into the
+# database's `sources` table, so the files themselves are working output.
+data/fb_*.json
+data/social_sources.json
+
+# The source inventory workbook. Same group list as above, plus every
+# employer's ATS token in one file — operator's own reference, not repo content.
+data/jobsworm-sources.xlsx
+
+# Output of scripts/seed/role_sweep.py. Regenerated on every run.
+data/role_sweep.json
+
+# Your Supabase project ref. Copy .mcp.example.json and fill it in.
+.mcp.json
